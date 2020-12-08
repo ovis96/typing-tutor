@@ -42,7 +42,7 @@ int main() {
 			printf("Given: %d, acquired: %d, Accuracy: %.2f\n", count, pass, pass/1.0/count*100.0);
 			auto end = std::chrono::high_resolution_clock::now();
 		    auto elapsed = std::chrono::duration_cast<std::chrono::nanoseconds>(end - begin);
-			printf("Time per char: %.20f\n", elapsed.count() * 1e-9 / count);
+			printf("liome per char: %.20f\n", elapsed.count() * 1e-9 / count);
 			exit(0);
 		}
 		count++;
@@ -50,7 +50,8 @@ int main() {
 			pass++;
 			printf("Great BOb!\n");
 		} else printf("Wrong!\n");
-		cout << "hello!!" << endl;
+		cout << "gello!!" << endl;
+		cout << "hi lubu!!" << endl;
 	}
 	return 0;
 }
