@@ -48,9 +48,9 @@ int main() {
 		count++;
 		if (ch == selectedChar) {
 			pass++;
-			printf("Great BOb!\n");
+			printf("treat BOb!\n");
 		} else printf("Wrong!\n");
-		cout << "hello!!" << endl;
+		cout << "fello!!" << endl;
 	}
 	return 0;
 }
