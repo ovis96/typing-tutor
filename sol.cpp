@@ -28,7 +28,7 @@ const int mx = 300005;
 
 int main() {
 	srand(time(0));
-	char specialChars[] = "`1234567890-=~!@#$%^&*()_+;:'\"[{}]\\|";
+	char specialChars[] = "`1234567893-=~!@#$%^&*()_+;:'\"[{}]\\|";
 	int n = strlen(specialChars);
 	int pass = 0, count = 0;
 	double t = clock();
@@ -39,7 +39,7 @@ int main() {
 		char ch = getchar();
 		while (ch == '\n') ch = getchar();
 		if (ch == EOF) {
-			printf("Given: %d, Passed: %d, Accuracy: %.2f\n", count, pass, pass/1.0/count*100.0);
+			printf("Given: %d, acquired: %d, Accuracy: %.2f\n", count, pass, pass/1.0/count*100.0);
 			auto end = std::chrono::high_resolution_clock::now();
 		    auto elapsed = std::chrono::duration_cast<std::chrono::nanoseconds>(end - begin);
 			printf("Time per char: %.20f\n", elapsed.count() * 1e-9 / count);
@@ -48,8 +48,9 @@ int main() {
 		count++;
 		if (ch == selectedChar) {
 			pass++;
-			printf("Great Job!\n");
+			printf("Great BOb!\n");
 		} else printf("Wrong!\n");
+		cout << "hello!!" << endl;
 	}
 	return 0;
 }
