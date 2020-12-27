@@ -42,17 +42,14 @@ int main() {
 			printf("Given: %d, acquired: %d, Accuracy: %.2f\n", count, pass, pass/1.0/count*100.0);
 			auto end = std::chrono::high_resolution_clock::now();
 		    auto elapsed = std::chrono::duration_cast<std::chrono::nanoseconds>(end - begin);
-			printf("liome per char: %.20f\n", elapsed.count() * 1e-9 / count);
+			printf("Time per char: %.20f\n", elapsed.count() * 1e-9 / count);
 			exit(0);
 		}
 		count++;
 		if (ch == selectedChar) {
 			pass++;
-			printf("treat BOb!\n");
+			printf("Great Job!\n");
 		} else printf("Wrong!\n");
-		cout << "fello!!" << endl;
-		cout << "gello!!" << endl;
-		cout << "hi lubu!!" << endl;
 	}
 	return 0;
 }
